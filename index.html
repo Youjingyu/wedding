@@ -23,7 +23,7 @@
 				<img src="png/flower.png" alt="">
 			</div>
 		</div>
-		<div class="w-fls">
+		<div class="w-fls w-1">
 			<img src="png/flowers1.png" alt="">
 			<img src="png/flowers2.png" alt="">
 			<img src="png/flowers1.png" alt="">
@@ -39,5 +39,21 @@
 			<img src="png/flowers1.png" alt="">
 			<img src="png/flowers2.png" alt="">
 		</div>
+		<script>
+			var $w_t = document.getElementsByClassName('w-t')[0];
+            var $w_p = document.getElementsByClassName('w-p')[0];
+            var $w_1 = document.getElementsByClassName('w-1')[0];
+            var $w_2 = document.getElementsByClassName('w-2')[0];
+            function addClass(dom) {
+                dom.className = dom.className + ' animate'
+            }
+
+            window.onload = function () {
+                document.getElementsByTagName('body')[0].style = 'display: block';
+                [$w_t, $w_p, $w_1, $w_2].forEach(function (ele) {
+                    addClass(ele);
+                })
+            };
+		</script>
 	</body>
 </html>

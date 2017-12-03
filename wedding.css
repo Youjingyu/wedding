@@ -1,4 +1,5 @@
 body{
+	display: none;
 	margin: 0;
 	background-color: #fab4c8;
 }
@@ -13,18 +14,26 @@ body{
 	height: 200px;
 	margin-left: 100px;
 	opacity: 0;
+}
+.w-t.animate img{
 	-webkit-animation: bloom 2s ease 1.2s infinite;
 	animation: bloom 2s ease 1.2s infinite;
 }
+
 .w-t img.boom2{
 	float: right;
 	margin-right: 100px;
+}
+.w-t.animate img.boom2{
 	-webkit-animation: bloom 2s ease 1.5s infinite;
 	animation: bloom 2s ease 1.5s infinite;
 }
+
 .w-t img.boom3{
 	position: absolute;
 	top: 20px;
+}
+.w-t.animate img.boom3{
 	-webkit-animation: bloom 2s ease 1.4s infinite;
 	animation: bloom 2s ease 1.4s infinite;
 }
@@ -58,12 +67,14 @@ body{
 	color: #ff720a;
 	/*letter-spacing: 5px;*/
 	opacity: 0;
-	-webkit-animation: titleBloom 1s linear 1s both;
-	animation: titleBloom 1s linear 1s both;
 	font-size: 56px;
 	font-weight: bold;
 	/*margin-left: -250px;*/
 	text-align: center;
+}
+.w-t.animate .w-t-m{
+	-webkit-animation: titleBloom 1s linear 1s both;
+	animation: titleBloom 1s linear 1s both;
 }
 @-webkit-keyframes titleBloom{
 	0% {
@@ -101,10 +112,12 @@ body{
 	margin-right: 0;
 	float: right;
 	margin-top: 60px;
-	-webkit-animation: toWoman 0.5s ease .5s both;
-	animation: toWoman 0.5s ease .5s both;
 	width: 270px;
 	height: 436px;
+}
+.w-p.animate .w-m img{
+	-webkit-animation: toWoman 0.5s ease .5s both;
+	animation: toWoman 0.5s ease .5s both;
 }
 @-webkit-keyframes toWoman{
 	0%{
@@ -137,10 +150,12 @@ body{
 .w-w img{
 	margin-left: 0;
 	float: left;
-	-webkit-animation: showW 0.8s ease 0s both;
-	animation: showW 0.8s ease 0s both;
 	width: 282px;
 	height: 548px;
+}
+.w-w.animate img{
+	-webkit-animation: showW 0.8s ease 0s both;
+	animation: showW 0.8s ease 0s both;
 }
 @-webkit-keyframes showW{
 	0%{
@@ -167,6 +182,8 @@ body{
 }
 .w-f img{
 	width: 60px;
+}
+.w-f.animate img{
 	-webkit-animation: show 0.4s ease 1s both;
 	animation: show 0.4s ease 1s both;
 }
@@ -207,6 +224,8 @@ body{
 .w-fls img{
 	height: 120px;
 	z-index: 400;
+}
+.w-fls.animate img{
 	-webkit-animation: showFlows 0.4s ease 2.3s both;
 	animation: showFlows 0.4s ease 2.3s both;
 }
@@ -238,7 +257,7 @@ body{
 	margin-top: -130px;
 	padding-left: 100px;
 }
-.w-2 img{
+.w-2.animate img{
 	-webkit-animation: showFlows 0.4s ease 2.7s both;
 	animation: showFlows 0.4s ease 2.7s both;
 }
