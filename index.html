@@ -50,7 +50,7 @@
             }
 
             window.onload = function () {
-                document.getElementsByTagName('body')[0].style = 'display: block';
+                document.getElementsByTagName('body')[0].setAttribute('style', 'display: block');
                 [$w_t, $w_p, $w_1, $w_2].forEach(function (ele) {
                     addClass(ele);
                 })
